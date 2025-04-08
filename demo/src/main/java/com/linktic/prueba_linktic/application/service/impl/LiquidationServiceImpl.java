@@ -1,4 +1,4 @@
-package com.linktic.prueba_linktic.application.service.Impl;
+package com.linktic.prueba_linktic.application.service.impl;
 
 import com.linktic.prueba_linktic.application.dto.LiquidationRequestDto;
 import com.linktic.prueba_linktic.application.dto.LiquidationResponseDto;
@@ -7,9 +7,9 @@ import com.linktic.prueba_linktic.application.service.ILiquidationService;
 import com.linktic.prueba_linktic.domain.model.BonusModel;
 import com.linktic.prueba_linktic.domain.model.ProtectionModel;
 import com.linktic.prueba_linktic.infrastructure.adapters.repository.BonusRepository;
-import com.linktic.prueba_linktic.infrastructure.adapters.repository.InsuredRepository;
 import com.linktic.prueba_linktic.infrastructure.adapters.repository.ProtectionRepository;
 import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
 import java.math.BigDecimal;
@@ -20,9 +20,9 @@ import java.util.List;
 
 @Service
 @RequiredArgsConstructor
+@Slf4j
 public class LiquidationServiceImpl implements ILiquidationService {
 
-    private final InsuredRepository insuredRepository;
     private final ProtectionRepository protectionRepository;
     private final BonusRepository bonusRepository;
 
@@ -58,7 +58,7 @@ public class LiquidationServiceImpl implements ILiquidationService {
 
             responseDto.getLiquidation().add(protectionDto);
             } catch (RuntimeException ex) {
-                System.out.println("Error finding protection: " + ex.getMessage());
+                log.error("Error finding protection: {}", ex.getMessage(), ex);
             }
         }
 

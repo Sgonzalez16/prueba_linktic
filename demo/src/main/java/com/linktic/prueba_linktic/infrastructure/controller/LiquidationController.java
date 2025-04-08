@@ -4,7 +4,7 @@ import com.linktic.prueba_linktic.application.dto.LiquidationRequestDto;
 import com.linktic.prueba_linktic.application.dto.LiquidationResponseDto;
 import com.linktic.prueba_linktic.application.service.ILiquidationService;
 import jakarta.validation.Valid;
-import org.springframework.beans.factory.annotation.Autowired;
+import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -14,14 +14,10 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/liquidation")
+@RequiredArgsConstructor
 public class LiquidationController {
 
-    @Autowired
-    private ILiquidationService liquidationService;
-
-    public LiquidationController(ILiquidationService liquidationService) {
-        this.liquidationService = liquidationService;
-    }
+    private final ILiquidationService liquidationService;
 
     @PostMapping("/calculateLiquidation")
     public ResponseEntity<LiquidationResponseDto> calculateLiquidation(@RequestBody @Valid LiquidationRequestDto request) {
