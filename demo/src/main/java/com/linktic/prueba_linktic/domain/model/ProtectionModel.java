@@ -11,8 +11,6 @@ import lombok.*;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-@Getter
-@Setter
 public class ProtectionModel {
 
     @Id

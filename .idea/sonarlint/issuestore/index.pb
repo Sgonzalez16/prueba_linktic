@@ -31,3 +31,17 @@ cdemo/src/main/java/com/linktic/prueba_linktic/infrastructure/controller/exeptio
 bdemo/src/main/java/com/linktic/prueba_linktic/infrastructure/controller/LiquidationController.java,2\7\27d160154ef52fd885b6deaa4c50ea53004b6770
 t
 Ddemo/src/main/java/com/linktic/prueba_linktic/PruebaApplication.java,8\4\848744cd2cef3c0c871867b3bf2adb92f753d783
+{
+Kdemo/src/main/java/com/linktic/prueba_linktic/domain/model/PersonModel.java,9\b\9b7615d52a59f7b10fa821538bcb66a2295349fa
+ñ
+fdemo/src/main/java/com/linktic/prueba_linktic/infrastructure/adapters/repository/PersonRepository.java,5\a\5abfc6fd9209226bfa1efe59fbc98d01d49f46c8
+É
+Sdemo/src/main/java/com/linktic/prueba_linktic/application/dto/PersonRequestDto.java,d\c\dc6bf425a7bfcf7c0d32b535c7bbc6d2e98400ce
+ä
+Zdemo/src/main/java/com/linktic/prueba_linktic/application/service/impl/IPersonService.java,f\1\f1eab471e56b8b6d7e7d6cc975afbc806de07074
+Ö
+Udemo/src/main/java/com/linktic/prueba_linktic/application/service/IPersonService.java,2\e\2e8b9024b2fc6d1819fc7db424c536cecb197d54
+ç
+]demo/src/main/java/com/linktic/prueba_linktic/application/service/impl/PersonServiceImpl.java,c\b\cbdc68b2b3d108e39d4129fd7331f4929e26e435
+ç
+]demo/src/main/java/com/linktic/prueba_linktic/infrastructure/controller/PersonController.java,3\f\3fbf0fe6714c32be5e98e13161cc0b323c790a10
