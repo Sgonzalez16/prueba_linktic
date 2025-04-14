@@ -37,8 +37,6 @@ Kdemo/src/main/java/com/linktic/prueba_linktic/domain/model/PersonModel.java,9\
 fdemo/src/main/java/com/linktic/prueba_linktic/infrastructure/adapters/repository/PersonRepository.java,5\a\5abfc6fd9209226bfa1efe59fbc98d01d49f46c8
 É
 Sdemo/src/main/java/com/linktic/prueba_linktic/application/dto/PersonRequestDto.java,d\c\dc6bf425a7bfcf7c0d32b535c7bbc6d2e98400ce
-ä
-Zdemo/src/main/java/com/linktic/prueba_linktic/application/service/impl/IPersonService.java,f\1\f1eab471e56b8b6d7e7d6cc975afbc806de07074
 Ö
 Udemo/src/main/java/com/linktic/prueba_linktic/application/service/IPersonService.java,2\e\2e8b9024b2fc6d1819fc7db424c536cecb197d54
 ç
